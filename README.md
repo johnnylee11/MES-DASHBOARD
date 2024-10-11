@@ -31,14 +31,17 @@ Configure DB Settings (backend - db.ts):
 ![Screenshot 2024-10-12 022355](https://github.com/user-attachments/assets/6c3b2317-20f6-47ff-8c92-f8544954675d)
 
 # Install Vue.js
+ ```bash
 npm install -g @vue/cli
-
+ ```
 # Typescript
+ ```bash
 npm install typescript
-
+ ```
 # Tailwind CSS
+ ```bash
 npm install tailwindcss postcss autoprefixer
-
+ ```
 
 # NPM INSTALL
 
