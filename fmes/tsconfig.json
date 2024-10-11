@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+      "target": "es6",  
+      "module": "esnext",
+      "baseUrl": "./",
+      "moduleResolution": "node",
+      "paths": {
+        "@/*": [
+          "src/*"  
+        ]
+      },
+      // "checkJs": true,
+      // "allowJs": false,
+      "skipLibCheck": true,
+      "jsx": "preserve",  // Keep if you're using JSX, otherwise consider removing it
+      "lib": [
+        "esnext",
+        "dom",
+        "dom.iterable"
+      ]
+    },
+    "include": [
+      "src/**/*"  // Include all files in the src folder
+  , "jsconfig.json"  ],
+    "exclude": [
+      "node_modules",
+      "./dist/**/*"
+    ]
+  }
+  
