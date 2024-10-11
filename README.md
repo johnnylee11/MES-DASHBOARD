@@ -28,7 +28,7 @@ CREATE TABLE quality_control (
 
 Configure DB Settings (backend - db.ts):
 
-![Screenshot 2024-10-12 022355](https://github.com/user-attachments/assets/bd7e69fd-cd95-4b16-8506-443ce67bcb56)
+![Screenshot 2024-10-12 022355](https://github.com/user-attachments/assets/6c3b2317-20f6-47ff-8c92-f8544954675d)
 
 # Install Vue.js
 npm install -g @vue/cli
