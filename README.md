@@ -42,6 +42,7 @@ npm install tailwindcss postcss autoprefixer
 # NPM INSTALL
 Run in terminal
 Frontend (fmes):
+ 
  cb fmes
  npm install
    - Axios needed to be install
@@ -49,6 +50,7 @@ Frontend (fmes):
       npm install @types/axios
 
 Backend (bmes):
+ 
  cb bmes
  npm install
 
