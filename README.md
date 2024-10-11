@@ -39,31 +39,58 @@ npm install typescript
 # Tailwind CSS
 npm install tailwindcss postcss autoprefixer
 
+
 # NPM INSTALL
-Run in terminal
-Frontend (fmes):
- 
- cb fmes
- npm install
-   - Axios needed to be install
-      npm install axios
-      npm install @types/axios
 
-Backend (bmes):
- 
- cb bmes
- npm install
+Run in terminal:
 
-After Node_Modules installed do the following:
- - create complied tyescript 
-    run code: npx tsc
+### Frontend (fmes):
+1. Change directory:
+   ```bash
+   cd fmes
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Install **Axios**:
+   ```bash
+   npm install axios
+   npm install @types/axios
+   ```
+
+### Backend (bmes):
+1. Change directory:
+   ```bash
+   cd bmes
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. After installing node_modules, compile TypeScript:
+   ```bash
+   npx tsc
+   ```
 
 # Running
-Run in terminal
-Frontend:
-npm run serve
 
-Backend:
-npm run dev
-or
-npm start
+Run in terminal:
+
+### Frontend:
+   ```bash
+   npm run serve
+   ```
+
+### Backend:
+   ```bash
+   npm run dev
+   ```
+   or
+   ```bash
+   npm start
+   ```
