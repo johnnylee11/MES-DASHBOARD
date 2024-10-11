@@ -9,6 +9,7 @@ Navigate to https://www.postgresql.org/download/windows/
 Run the following to create table after database created
 Create Table:
 
+ ```bash
 CREATE TABLE production (
     product_id SERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -16,7 +17,9 @@ CREATE TABLE production (
     created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT NOW(),
     material VARCHAR(255)
 );
+ ```
 
+ ```bash
 CREATE TABLE quality_control (
     inspection_id SERIAL PRIMARY KEY,     -- Auto-incrementing primary key
     product_id INTEGER NOT NULL,          -- Product ID, assuming it references a product table
@@ -25,6 +28,7 @@ CREATE TABLE quality_control (
     created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT NOW(), -- Timestamp when the record was created
     scheduled_date DATE NOT NULL          -- Date when the inspection was scheduled
 );
+ ```
 
 Configure DB Settings (backend - db.ts):
 
