@@ -6,6 +6,9 @@ import { Parser } from 'json2csv';
 import fs from 'fs';
 
 // Create Production Record
+/**
+ * Inserts a new production record into the database.
+ */
 export const createProduction = async (req: Request, res: Response) => {
   const { name, status, material } = req.body;
   try {
@@ -21,6 +24,9 @@ export const createProduction = async (req: Request, res: Response) => {
 };
 
 // Get All Production Records
+/**
+ * Retrieves all production records.
+ */
 export const getAllProduction = async (req: Request, res: Response) => {
   try {
     const result: QueryResult = await pool.query('SELECT * FROM production');
@@ -32,6 +38,9 @@ export const getAllProduction = async (req: Request, res: Response) => {
 };
 
 // Update Production Record
+/**
+ * Updates a production record by product_id.
+ */
 export const updateProduction = async (req: Request, res: Response) => {
   const { product_id } = req.params;
   const { name, status } = req.body;
@@ -57,6 +66,9 @@ export const updateProduction = async (req: Request, res: Response) => {
 
 
 // Delete Production Record
+/**
+ * Deletes a production record by product_id.
+ */
 export const deleteProduction = async (req: Request, res: Response) => {
   const { product_id } = req.params;
   try {
@@ -77,6 +89,9 @@ export const deleteProduction = async (req: Request, res: Response) => {
 };
 
 // Export Production Data as CSV
+/**
+ * Exports production data as CSV and handles time zone adjustment for Malaysia (UTC+8).
+ */
 export const exportProductionCSV = async (req: Request, res: Response): Promise<void> => {
   try {
     // Get the current date and time
