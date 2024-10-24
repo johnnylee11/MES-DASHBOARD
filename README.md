@@ -1,4 +1,4 @@
-# ASeriousTask Overview
+# MES DASHBOARD Overview
 This Manufacturing Execution System (MES) project is built using Vue.js for the frontend and Express.js with TypeScript for the backend, connected to PostgreSQL for data management. The system features a dashboard that provides real-time insights into production and quality control processes. Users can manage production data, track product statuses from raw materials to finished goods, and conduct quality inspections. It supports full CRUD functionality, data export as CSV, and visualizes key metrics such as production status, machine utilization, and defect rates.
 
 # Make sure Node.js is installed
@@ -84,7 +84,7 @@ Run in terminal:
    npx tsc
    ```
 
-# Running
+# Running the Dashboard
 
 Run in terminal:
 
